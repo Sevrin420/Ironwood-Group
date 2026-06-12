@@ -162,10 +162,13 @@ h1, h2, h3, h4 {
   color: var(--color-primary);
 }
 
-.logo svg {
-  width: 34px;
-  height: 34px;
+.logo svg,
+.logo img {
+  width: 44px;
+  height: 44px;
   flex-shrink: 0;
+  border-radius: 8px;
+  object-fit: cover;
 }
 
 .logo .logo-text-secondary {
@@ -301,6 +304,9 @@ h1, h2, h3, h4 {
 
 .hero-art img {
   max-width: 100%;
+  max-height: 480px;
+  width: auto;
+  border-radius: 16px;
   filter: drop-shadow(0 16px 40px rgba(0, 0, 0, 0.25));
 }
 
@@ -819,9 +825,12 @@ h1, h2, h3, h4 {
   margin-bottom: 0.75rem;
 }
 
-.footer-logo svg {
-  width: 30px;
-  height: 30px;
+.footer-logo svg,
+.footer-logo img {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  object-fit: cover;
 }
 
 .footer-col h4 {
