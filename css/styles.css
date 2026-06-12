@@ -217,10 +217,6 @@ h1, h2, h3, h4 {
   border-radius: 2px;
 }
 
-.nav-cta {
-  margin-left: 0.5rem;
-}
-
 .nav-toggle {
   display: none;
   flex-direction: column;
@@ -961,10 +957,6 @@ h1, h2, h3, h4 {
 
   .nav-toggle {
     display: flex;
-  }
-
-  .nav-cta {
-    margin-left: 0;
   }
 
   .navbar {
