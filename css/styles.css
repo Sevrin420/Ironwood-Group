@@ -441,6 +441,43 @@ h1, h2, h3, h4 {
   padding: 0 1.5rem 1.5rem;
 }
 
+/* ---------- Featured Land Listing ---------- */
+.spotlight-card {
+  position: relative;
+  display: block;
+  height: 340px;
+  border-radius: var(--radius);
+  overflow: hidden;
+  margin-bottom: 2.5rem;
+  box-shadow: var(--shadow-md);
+}
+
+.spotlight-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.spotlight-card:hover img {
+  transform: scale(1.05);
+}
+
+.spotlight-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: flex-end;
+  padding: 2rem;
+  background: linear-gradient(180deg, rgba(11, 58, 31, 0) 45%, rgba(11, 58, 31, 0.78) 100%);
+}
+
+.spotlight-overlay h2 {
+  color: #fff;
+  font-size: clamp(1.6rem, 4vw, 2.6rem);
+  margin: 0;
+}
+
 /* ---------- Filters ---------- */
 .filter-bar {
   display: flex;
@@ -675,6 +712,67 @@ h1, h2, h3, h4 {
   font-style: italic;
 }
 
+/* ---------- Listing Detail ---------- */
+.listing-detail {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 3rem;
+}
+
+.listing-gallery img {
+  width: 100%;
+  border-radius: var(--radius);
+  margin-bottom: 1.25rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.listing-gallery .gallery-caption {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  margin: -0.75rem 0 1.25rem;
+}
+
+.listing-info .listing-location {
+  color: var(--color-text-muted);
+  margin-bottom: 1.25rem;
+}
+
+.listing-facts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.85rem 1.5rem;
+  margin: 1.25rem 0 1.5rem;
+  padding: 1.25rem;
+  background-color: var(--color-bg-alt);
+  border-radius: var(--radius);
+}
+
+.listing-facts dt {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-text-muted);
+}
+
+.listing-facts dd {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  margin-top: 0.15rem;
+}
+
+.listing-info p {
+  color: var(--color-text-muted);
+  margin-bottom: 1rem;
+}
+
+.listing-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
 /* ---------- Footer ---------- */
 .site-footer {
   background-color: var(--color-primary-dark);
@@ -774,6 +872,10 @@ h1, h2, h3, h4 {
     grid-template-columns: 1fr;
   }
 
+  .listing-detail {
+    grid-template-columns: 1fr;
+  }
+
   .footer-grid {
     grid-template-columns: 1fr 1fr;
   }
@@ -813,6 +915,14 @@ h1, h2, h3, h4 {
   }
 
   .properties-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .spotlight-card {
+    height: 240px;
+  }
+
+  .listing-facts {
     grid-template-columns: 1fr;
   }
 
