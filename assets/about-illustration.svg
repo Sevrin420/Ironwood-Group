@@ -1,0 +1,49 @@
+<svg width="600" height="500" viewBox="0 0 600 500" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="500" rx="16" fill="#f3faf6"/>
+  <circle cx="470" cy="90" r="70" fill="#aee6c4" opacity="0.5"/>
+  <rect x="0" y="400" width="600" height="100" fill="#d8ece2"/>
+
+  <!-- Main building -->
+  <g>
+    <rect x="160" y="140" width="220" height="270" rx="6" fill="#14532d"/>
+    <g fill="#aee6c4">
+      <rect x="185" y="170" width="36" height="36"/>
+      <rect x="240" y="170" width="36" height="36"/>
+      <rect x="295" y="170" width="36" height="36"/>
+      <rect x="185" y="225" width="36" height="36"/>
+      <rect x="240" y="225" width="36" height="36"/>
+      <rect x="295" y="225" width="36" height="36"/>
+      <rect x="185" y="280" width="36" height="36"/>
+      <rect x="240" y="280" width="36" height="36"/>
+      <rect x="295" y="280" width="36" height="36"/>
+      <rect x="185" y="335" width="36" height="36"/>
+      <rect x="295" y="335" width="36" height="36"/>
+    </g>
+    <rect x="240" y="335" width="36" height="75" fill="#4fb477"/>
+  </g>
+
+  <!-- Secondary building -->
+  <g>
+    <rect x="395" y="220" width="130" height="190" rx="6" fill="#2f7a4d"/>
+    <g fill="#d8a45c" opacity="0.85">
+      <rect x="415" y="245" width="28" height="28"/>
+      <rect x="455" y="245" width="28" height="28"/>
+      <rect x="415" y="290" width="28" height="28"/>
+      <rect x="455" y="290" width="28" height="28"/>
+      <rect x="415" y="335" width="28" height="28"/>
+      <rect x="455" y="335" width="28" height="28"/>
+    </g>
+  </g>
+
+  <!-- Palm tree -->
+  <g fill="#2f7a4d">
+    <rect x="105" y="300" width="12" height="110" rx="3"/>
+    <path d="M111 300 C 70 290 45 260 35 230 C 75 240 100 265 113 295 Z"/>
+    <path d="M111 300 C 152 288 178 258 188 228 C 148 238 122 263 109 293 Z"/>
+    <path d="M111 300 C 86 270 76 240 76 212 C 106 230 113 265 115 295 Z"/>
+    <path d="M111 300 C 138 272 150 244 152 216 C 120 230 109 263 107 293 Z"/>
+  </g>
+
+  <!-- Sun accent -->
+  <circle cx="80" cy="80" r="34" fill="#4fb477" opacity="0.3"/>
+</svg>

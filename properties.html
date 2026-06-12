@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Properties | Ironwood Group LLC</title>
+  <meta name="description" content="Browse current property listings for sale and for rent from Ironwood Group LLC.">
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="navbar">
+      <a href="index.html" class="logo">
+        <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle cx="24" cy="24" r="24" fill="#14532d"/>
+          <path d="M24 8 C 13 15, 11 26, 24 41 C 37 26, 35 15, 24 8 Z" fill="#4fb477"/>
+          <path d="M24 41 L24 8" stroke="#aee6c4" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <span class="logo-text">
+          Ironwood Group
+          <span class="logo-text-secondary">LLC</span>
+        </span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="properties.html" class="active">Properties</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="legal.html">Legal</a></li>
+        <li class="nav-cta"><a href="contact.html" class="btn btn-primary btn-small">Get In Touch</a></li>
+      </ul>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Page Banner -->
+  <section class="page-banner">
+    <div class="container">
+      <h1>Properties</h1>
+      <p>Browse our current listings for sale and for rent. Contact our team for tours, applications, or more details on any property.</p>
+    </div>
+  </section>
+
+  <!-- Properties -->
+  <section class="section">
+    <div class="container">
+
+      <div class="filter-bar" id="filter-bar">
+        <button class="filter-btn active" data-filter="all">All Listings</button>
+        <button class="filter-btn" data-filter="sale">For Sale</button>
+        <button class="filter-btn" data-filter="rent">For Rent</button>
+      </div>
+
+      <div class="properties-grid" id="properties-grid">
+
+        <article class="property-card" data-type="sale">
+          <div class="property-media">
+            <img src="assets/properties/property-1.svg" alt="245 Palm Grove Lane, Naples, FL">
+            <span class="property-badge badge-sale">For Sale</span>
+          </div>
+          <div class="property-body">
+            <div class="property-price">$649,000</div>
+            <div class="property-address">245 Palm Grove Lane</div>
+            <div class="property-location">Naples, FL 34102</div>
+            <div class="property-specs">
+              <span>4 Beds</span>
+              <span>3 Baths</span>
+              <span>2,850 sqft</span>
+            </div>
+            <p class="property-desc">Spacious family home with lush tropical landscaping, an open-concept layout, and a private pool ideal for entertaining.</p>
+          </div>
+          <div class="property-footer">
+            <a href="contact.html" class="btn btn-dark-outline btn-small btn-block">Inquire</a>
+          </div>
+        </article>
+
+        <article class="property-card" data-type="rent">
+          <div class="property-media">
+            <img src="assets/properties/property-2.svg" alt="1820 Mangrove Ridge Dr, Sarasota, FL">
+            <span class="property-badge badge-rent">For Rent</span>
+          </div>
+          <div class="property-body">
+            <div class="property-price">$3,200<span> /month</span></div>
+            <div class="property-address">1820 Mangrove Ridge Dr</div>
+            <div class="property-location">Sarasota, FL 34236</div>
+            <div class="property-specs">
+              <span>3 Beds</span>
+              <span>2 Baths</span>
+              <span>1,950 sqft</span>
+            </div>
+            <p class="property-desc">Modern waterfront condo with resort-style amenities, including a community pool, gym, and private balcony.</p>
+          </div>
+          <div class="property-footer">
+            <a href="contact.html" class="btn btn-dark-outline btn-small btn-block">Inquire</a>
+          </div>
+        </article>
+
+        <article class="property-card" data-type="sale">
+          <div class="property-media">
+            <img src="assets/properties/property-3.svg" alt="78 Banyan Court, Fort Myers, FL">
+            <span class="property-badge badge-sale">For Sale</span>
+          </div>
+          <div class="property-body">
+            <div class="property-price">$899,500</div>
+            <div class="property-address">78 Banyan Court</div>
+            <div class="property-location">Fort Myers, FL 33901</div>
+            <div class="property-specs">
+              <span>5 Beds</span>
+              <span>4 Baths</span>
+              <span>3,600 sqft</span>
+            </div>
+            <p class="property-desc">Luxury estate home minutes from the marina, featuring a chef's kitchen, home theater, and three-car garage.</p>
+          </div>
+          <div class="property-footer">
+            <a href="contact.html" class="btn btn-dark-outline btn-small btn-block">Inquire</a>
+          </div>
+        </article>
+
+        <article class="property-card" data-type="rent">
+          <div class="property-media">
+            <img src="assets/properties/property-4.svg" alt="502 Seagrape Ave, Unit 12, Tampa, FL">
+            <span class="property-badge badge-rent">For Rent</span>
+          </div>
+          <div class="property-body">
+            <div class="property-price">$2,150<span> /month</span></div>
+            <div class="property-address">502 Seagrape Ave, Unit 12</div>
+            <div class="property-location">Tampa, FL 33602</div>
+            <div class="property-specs">
+              <span>2 Beds</span>
+              <span>2 Baths</span>
+              <span>1,150 sqft</span>
+            </div>
+            <p class="property-desc">Recently renovated downtown apartment with city views, in-unit laundry, and walkable access to shops and dining.</p>
+          </div>
+          <div class="property-footer">
+            <a href="contact.html" class="btn btn-dark-outline btn-small btn-block">Inquire</a>
+          </div>
+        </article>
+
+        <article class="property-card" data-type="sale">
+          <div class="property-media">
+            <img src="assets/properties/property-5.svg" alt="1140 Coral Reef Way, Cape Coral, FL">
+            <span class="property-badge badge-sale">For Sale</span>
+          </div>
+          <div class="property-body">
+            <div class="property-price">$475,000</div>
+            <div class="property-address">1140 Coral Reef Way</div>
+            <div class="property-location">Cape Coral, FL 33904</div>
+            <div class="property-specs">
+              <span>3 Beds</span>
+              <span>2 Baths</span>
+              <span>1,800 sqft</span>
+            </div>
+            <p class="property-desc">Charming canal-front bungalow with a private boat dock, screened lanai, and quick access to the river.</p>
+          </div>
+          <div class="property-footer">
+            <a href="contact.html" class="btn btn-dark-outline btn-small btn-block">Inquire</a>
+          </div>
+        </article>
+
+        <article class="property-card" data-type="rent">
+          <div class="property-media">
+            <img src="assets/properties/property-6.svg" alt="33 Hibiscus Terrace, Bonita Springs, FL">
+            <span class="property-badge badge-rent">For Rent</span>
+          </div>
+          <div class="property-body">
+            <div class="property-price">$4,500<span> /month</span></div>
+            <div class="property-address">33 Hibiscus Terrace</div>
+            <div class="property-location">Bonita Springs, FL 34134</div>
+            <div class="property-specs">
+              <span>4 Beds</span>
+              <span>3.5 Baths</span>
+              <span>2,700 sqft</span>
+            </div>
+            <p class="property-desc">Gated community villa with a private pool, screened lanai, and resort-style amenities just minutes from the beach.</p>
+          </div>
+          <div class="property-footer">
+            <a href="contact.html" class="btn btn-dark-outline btn-small btn-block">Inquire</a>
+          </div>
+        </article>
+
+      </div>
+
+      <p id="no-results" style="display:none; text-align:center; color: var(--color-text-muted); margin-top: 2rem;">
+        No properties currently match this filter. Please check back soon or contact us for upcoming availability.
+      </p>
+
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="cta-banner">
+    <div class="container">
+      <h2>Don't See What You're Looking For?</h2>
+      <p>New listings are added regularly. Get in touch and we'll help you find the right property.</p>
+      <a href="contact.html" class="btn btn-primary">Contact Our Team</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="footer-logo">
+            <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <circle cx="24" cy="24" r="24" fill="#4fb477"/>
+              <path d="M24 8 C 13 15, 11 26, 24 41 C 37 26, 35 15, 24 8 Z" fill="#14532d"/>
+              <path d="M24 41 L24 8" stroke="#0b3a1f" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            Ironwood Group LLC
+          </div>
+          <p>Property sales, rentals, and management services built on trust, local expertise, and genuine care for our clients and communities.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="properties.html">Properties</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="legal.html">Legal</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Properties</h4>
+          <ul>
+            <li><a href="properties.html">For Sale</a></li>
+            <li><a href="properties.html">For Rent</a></li>
+            <li><a href="contact.html">Schedule a Tour</a></li>
+            <li><a href="contact.html">List With Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <p>100 Harbor View Drive<br>Naples, FL 34102</p>
+          <p>(239) 555-0142</p>
+          <p>info@ironwoodgroupllc.com</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Ironwood Group LLC. All rights reserved.</p>
+        <div class="fair-housing">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M3 10.5L12 3l9 7.5"/>
+            <path d="M5 9.5V20h14V9.5"/>
+            <path d="M9 20v-5h6v5"/>
+          </svg>
+          <span>Equal Housing Opportunity</span>
+        </div>
+        <a href="legal.html">Privacy Policy &amp; Terms</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
