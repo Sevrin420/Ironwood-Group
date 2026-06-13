@@ -577,6 +577,30 @@ h1, h2, h3, h4 {
   margin: -0.75rem 0 1.25rem;
 }
 
+.listing-gallery .gallery-map-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: -0.75rem;
+  font-family: var(--font-heading);
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--color-secondary);
+  text-decoration: none;
+  transition: color var(--transition);
+}
+
+.listing-gallery .gallery-map-link svg {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
+.listing-gallery .gallery-map-link:hover {
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+
 .listing-info .listing-location {
   color: var(--color-text-muted);
   margin-bottom: 1.25rem;
