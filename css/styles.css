@@ -276,6 +276,25 @@ h1, h2, h3, h4 {
   filter: drop-shadow(0 16px 40px rgba(0, 0, 0, 0.25));
 }
 
+.hero-location {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: -1.25rem;
+  font-family: var(--font-heading);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.hero-location svg {
+  width: 17px;
+  height: 17px;
+  flex-shrink: 0;
+}
+
 /* ---------- Page Banner (for inner pages) ---------- */
 .page-banner {
   background: linear-gradient(120deg, var(--color-primary) 0%, var(--color-secondary) 100%);
