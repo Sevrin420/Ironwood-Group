@@ -93,4 +93,27 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
+  // Tax deed disclosure modal (property listing pages)
+  var taxDeedBtn = document.getElementById('tax-deed-btn');
+  var taxDeedModal = document.getElementById('tax-deed-modal');
+  var taxDeedClose = document.getElementById('tax-deed-close');
+
+  if (taxDeedBtn && taxDeedModal) {
+    taxDeedBtn.addEventListener('click', function () {
+      taxDeedModal.showModal();
+    });
+
+    if (taxDeedClose) {
+      taxDeedClose.addEventListener('click', function () {
+        taxDeedModal.close();
+      });
+    }
+
+    taxDeedModal.addEventListener('click', function (event) {
+      if (event.target === taxDeedModal) {
+        taxDeedModal.close();
+      }
+    });
+  }
+
 });
