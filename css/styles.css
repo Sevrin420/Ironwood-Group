@@ -478,39 +478,6 @@ h1, h2, h3, h4 {
   margin: 0;
 }
 
-/* ---------- Filters ---------- */
-.filter-bar {
-  display: flex;
-  justify-content: center;
-  gap: 0.75rem;
-  margin-bottom: 2.5rem;
-  flex-wrap: wrap;
-}
-
-.filter-btn {
-  font-family: var(--font-heading);
-  font-weight: 600;
-  font-size: 0.9rem;
-  padding: 0.6rem 1.5rem;
-  border-radius: 999px;
-  border: 1.5px solid var(--color-border);
-  background-color: #fff;
-  color: var(--color-text);
-  cursor: pointer;
-  transition: all var(--transition);
-}
-
-.filter-btn:hover {
-  border-color: var(--color-accent);
-  color: var(--color-secondary);
-}
-
-.filter-btn.active {
-  background-color: var(--color-primary);
-  border-color: var(--color-primary);
-  color: #fff;
-}
-
 /* ---------- Contact Page ---------- */
 .contact-grid {
   display: grid;

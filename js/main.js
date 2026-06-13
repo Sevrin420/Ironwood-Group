@@ -21,40 +21,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  // Property filter (Properties page)
-  var filterBar = document.getElementById('filter-bar');
-  var propertiesGrid = document.getElementById('properties-grid');
-
-  if (filterBar && propertiesGrid) {
-    var filterButtons = filterBar.querySelectorAll('.filter-btn');
-    var propertyCards = propertiesGrid.querySelectorAll('.property-card');
-    var noResults = document.getElementById('no-results');
-
-    filterBar.addEventListener('click', function (event) {
-      var button = event.target.closest('.filter-btn');
-      if (!button) return;
-
-      filterButtons.forEach(function (btn) {
-        btn.classList.remove('active');
-      });
-      button.classList.add('active');
-
-      var filter = button.getAttribute('data-filter');
-      var visibleCount = 0;
-
-      propertyCards.forEach(function (card) {
-        var type = card.getAttribute('data-type');
-        var show = filter === 'all' || type === filter;
-        card.style.display = show ? '' : 'none';
-        if (show) visibleCount++;
-      });
-
-      if (noResults) {
-        noResults.style.display = visibleCount === 0 ? 'block' : 'none';
-      }
-    });
-  }
-
   // Contact form validation
   var contactForm = document.getElementById('contact-form');
 
