@@ -332,115 +332,6 @@ h1, h2, h3, h4 {
   color: var(--color-text-muted);
 }
 
-/* ---------- Property Cards ---------- */
-.properties-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-}
-
-.property-card {
-  background-color: #fff;
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius);
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  transition: transform var(--transition), box-shadow var(--transition);
-}
-
-.property-card:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow-md);
-}
-
-.property-media {
-  position: relative;
-}
-
-.property-media img {
-  width: 100%;
-  height: 210px;
-  object-fit: cover;
-}
-
-.property-badge {
-  position: absolute;
-  top: 14px;
-  left: 14px;
-  font-family: var(--font-heading);
-  font-size: 0.75rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  padding: 0.35rem 0.8rem;
-  border-radius: 999px;
-  color: #fff;
-}
-
-.badge-sale {
-  background-color: var(--color-secondary);
-}
-
-.badge-rent {
-  background-color: var(--color-sand);
-}
-
-.property-body {
-  padding: 1.5rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.6rem;
-  flex: 1;
-}
-
-.property-price {
-  font-family: var(--font-heading);
-  font-size: 1.3rem;
-  font-weight: 700;
-  color: var(--color-primary);
-}
-
-.property-price span {
-  font-size: 0.85rem;
-  font-weight: 500;
-  color: var(--color-text-muted);
-}
-
-.property-address {
-  font-weight: 600;
-  font-size: 1rem;
-}
-
-.property-location {
-  color: var(--color-text-muted);
-  font-size: 0.88rem;
-}
-
-.property-specs {
-  display: flex;
-  gap: 1rem;
-  font-size: 0.85rem;
-  color: var(--color-text-muted);
-  margin: 0.25rem 0 0.5rem;
-}
-
-.property-specs span {
-  display: flex;
-  align-items: center;
-  gap: 0.35rem;
-}
-
-.property-desc {
-  font-size: 0.9rem;
-  color: var(--color-text-muted);
-  flex: 1;
-}
-
-.property-footer {
-  padding: 0 1.5rem 1.5rem;
-}
-
 /* ---------- Featured Land Listing ---------- */
 .spotlight-card {
   position: relative;
@@ -873,10 +764,6 @@ h1, h2, h3, h4 {
 
 /* ---------- Responsive ---------- */
 @media (max-width: 980px) {
-  .properties-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
   .contact-grid {
     grid-template-columns: 1fr;
   }
@@ -917,10 +804,6 @@ h1, h2, h3, h4 {
 
   .navbar {
     position: relative;
-  }
-
-  .properties-grid {
-    grid-template-columns: 1fr;
   }
 
   .spotlight-card {
